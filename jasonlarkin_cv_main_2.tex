@@ -1,0 +1,361 @@
+\documentclass{article}
+\synctex=1
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[hidelinks,colorlinks=false]{hyperref}
+\usepackage{helvet}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{enumitem}
+%\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+\setitemize{leftmargin=10pt,itemindent=10pt, noitemsep, topsep=4pt, parsep=2pt, partopsep=2pt}
+\renewcommand{\familydefault}{\sfdefault}
+\textheight=10in
+\pagestyle{empty}
+%\raggedbottom
+\raggedright
+
+%  \renewcommand{\encodingdefault}{cg}
+  %\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+\newcommand{\area}[2]{\vspace*{-9pt} \begin{verse}\textbf{#1}   #2 \end{verse}  }
+\newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-18pt} \hrulefill \\}
+\newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt} \textsc{#1}} \vspace*{-6pt} \lineunder}
+\newcommand{\employer}[3]{{ \textbf{#1} (#2) \underline{\textbf{\emph{#3}}}\\  }}
+\newcommand{\contact}[3]{
+\vspace*{-8pt}
+\begin{center}
+{  {#1}}\\
+#2 \lineunder 
+#3
+\end{center}
+\vspace*{-8pt}
+}
+\newenvironment{achievements}{\begin{list}{$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}}
+\newcommand{\schoolwithcourses}[3]{
+ \textbf{#1} #2 $\bullet$ #3\\ 
+\vspace*{5pt}
+}
+\newcommand{\school}[3]{
+ \textbf{#1} #2 $\bullet$ #3\\
+}
+% END RESUME DEFINITIONS
+
+\newcommand{\boldx}[1]{{\bf #1}}
+%\newcommand{\boldx}[1]{{}}
+
+%tikz
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+
+\newcommand{\gen}{\textbf{P1}\xspace}
+
+\begin{document}
+
+\small
+\smallskip
+\vspace*{-44pt}
+
+\contact{\href{http://jasonlarkin.org}{\LARGE{Jason M Larkin, P}\lowercase{h}\LARGE{D}, Lead Quantum Computing Lab, Carnegie Mellon University SEI }}
+{\href{mailto:jmlarkin@andrew.cmu.edu}{jmlarkin@andrew.cmu.edu} $\bullet$ active TS-SCI clearance}
+
+%$\bullet$ 
+%\textbf{Note: }\href{https://github.com/jasonlarkin/cmu-doc/raw/master/cv/stash/jasonlarkin_cv.pdf}
+%{Red are hyperlinks in digital copy}}
+
+\header{\large{Career Overview}}
+
+I have 16 years experience in research and product development, working in the following domains:
+\begin{itemize}
+\item Quantum Computing and Information Science
+\item High Performance Computing: DARPA, CMU-SEI QHub, \href{https://access-ci.org/}{ACCESS-CI} Network Research
+\item Materials Science: atomistic$/$molecular modeling, nanoscale transport
+\item Condensed Matter Physics}: turbulence$/$fluid dynamics %,nonlinear$/$visco-elasticity
+%\item \textbf{Knowledge Management Systems}:natural language processing/understanding,"umwelt hacking"
+%\item CyberPhysical:robotics$/$autonomy$/$assurance,"umwelt hacking"
+\end{itemize}
+
+\end{itemize}
+
+\header{\large{Experience}}
+
+\employer{\href{https://www.sei.cmu.edu/about/divisions/emerging-technology-center/}{CMU AI Division Software Engineering Institute}}{2017 - Present}{Senior Research Scientist}
+
+%(2013-2015)\underline{\textbf{\emph{Software Engineer}}}
+
+\vspace{1mm}
+    \begin{itemize}
+      \item \textbf{PROJECTS}
+      \begin{itemize}
+        \item {\href{https://www.sei.cmu.edu/our-work/quantum-computing/index.cfm}{\textbf{Quantum Advantage Evaluation Framework}}}
+        \begin{itemize}
+          \item PI or co-PI (5.8M funding) on applications for quantum advantage in combinatorial optimization, materials science, machine learning, cryptography. Products are implementations and tools for DOD stakeholders. 
+          \item Technical and software engineering lead of a group tasked with modeling scalable fault-tolerant architectures and doing quantum resource estimation for transformative Applications. 
+          \item Created \href{https://www.sei.cmu.edu/our-work/quantum-computing/index.cfm}{CMU-SEI QHub} supporting 15 researchers, publications, presentations, and courses at CMU. 
+        \end{itemize}
+        
+        \item {\textbf{US DOD OUSD Quantum Advantage in NISQ Era} }}PI}
+        \begin{itemize}
+          \item Tasked to identify potential DOD Applications that can achieve Quantum Advantage in 1-3 years given projections of hardware progress. Delivered a guide to research for to DOD OUSD management over the next 1-3 and 5-10 year timeframe. 
+          \item Formed long-term partnerships with DOD stakeholders (AFRL, NRL, ARL) with distinct Applications (combinatorial optimization, materials science, machine learning). Continue ongoing relationship in the form of shared research and funding partnerships. 
+        \end{itemize}        
+
+
+        \item {\textbf{{CMU NSF Quantum Computing Leap Initiative }} Co-PI}}
+        \begin{itemize}
+          \item Forming inter-discplinary consortium at CMU of relevant academic departments (e.g. materials science, computer science, computer engineering) with private sector partners (Lockheed Martin, Bosch, IBM, Google) to create a Quantum Computing Center focused on Application-level research. 
+          \item 
+        \end{itemize}        
+        
+        
+        \item {\textbf{Pittsburgh Supercomputing Center NSF Novel Computing Platforms }}Co-PI}}
+        \begin{itemize}
+          \item Proposing a full-stack quantum computing simulation tool that will allow users to design scalable fault-tolerant quantum computers. 
+          \item Working with private sector partners NVIDIA, Intel, and IBM to procure hardware.  I am working to help define the specifications of these classical compute resources given the various types of simulation needed to model fault-tolreant quantum computers.
+          \item 
+        \end{itemize}                
+        
+        \end{itemize}
+
+        \item \textbf{\href{https://www.darpa.mil/program/software-defined-hardware}{Software Defined Hardware (SDH, \href{http://www.darpa.mil/default.aspx}{DARPA})(John Wohlbier PI)}}
+        \begin{itemize}
+            \item Created the testing infrastructure for SEI via AWS, which utilized compilation and analysis tools (Intel, PyTorch, Tensorflow, ARM) to establish maximum theoretical and empirical performance for data-intensive workflows (machine learning, graph analytics, optimization) on commodity hardware (CPU, GPU, TPU) to compare against new software-defined hardware designs. 
+        \end{itemize}
+   
+        \item \textbf{GraphBLAS Test Framework (Scott McMillan PI)} 
+        \begin{itemize}
+            \item  Created a test framework for multiple implementations of GraphBLAS.org, including \href{https://github.com/cmu-sei/gbtl}{SEI’s GraphBLAS Template Library} https://github.com/cmu-sei/gbtl.
+        \end{itemize}
+        
+                \item \textbf{\href{https://www.darpa.mil/program/software-defined-hardware}{Data Protection in Virtual Environments,\href{https://www.darpa.mil/program/data-protection-in-virtual-environments}{(DPRIVE, DARPA}) (Drew Dolgert PI)}}
+        \begin{itemize}
+            \item Project to utilize Fully Homomorphic Encryption (FHE) for practical Machine Learning workflows. I worked to create the tests/benchmarks for performers to demonstrate the goals of computational performance and security. These tests inform new architectural designs by the performers. 
+        \end{itemize}
+        
+        
+    \end{itemize}
+    
+    
+
+\employer{\href{http://spiralgen.com/}{SpiralGen, Inc.}}{2013 - 2017}{Senior Research Engineer}
+
+%(2013-2015)\underline{\textbf{\emph{Software Engineer}}}
+
+\vspace{1mm}
+%\par
+%My work involved research and development across the of software and hardware that supported the Spiral toolchain for , with a focus on delivering  using (see \textbf{Skills} section for more):
+
+%My focus of expertise is identified in \textbf{bold}.
+%    \item Spanned range of languages from "nearly-assembly" C to JavaScript/Python/etc.  
+    \begin{itemize}
+
+      \item \textbf{PROJECTS}
+
+      Supported work of commercial and research projects featuring the code-generation tool \textbf{\href{http://spiral.net/}{Spiral}}.
+
+      \begin{itemize}
+
+        \item \textbf{Spiral Code Generation Toolbox for Matlab/Simulink and Advanced Driver Assistance Systems (ADAS)}
+        \begin{itemize} 
+        \item Developed toolbox for Spiral code generation of Automotive Adaptive Cruise Control Using FMCW and MFSK Technology.
+        \end{itemize}
+
+        \item \textbf{\href{http://www.darpa.mil/Our_Work/I2O/Programs/High-Assurance_Cyber_Military_Systems_(HACMS).aspx}{High-Assurance Cyber Military Systems (HACMS, \href{http://www.darpa.mil/default.aspx}{DARPA})}} 
+        \begin{itemize}
+        Automatically-optimized / \href{https://en.wikipedia.org/wiki/Formal_methods}{formally-verified} kernels for \href{https://en.wikipedia.org/wiki/Cyber-physical_system}{Cyber-Physical Systems} using Spiral, plug-in for OSATE and the Architecture Analysis $\&$ Design Language (AADL), DARPA Demo Days ground/air vehicles, virtual/physical environments, Large/diverse collaboration team interacting with O(1000K) Lines of Code (LOC). 
+        \end{itemize}
+        
+      \item \textbf{SpiralFFT for \href{http://www.ncsa.illinois.edu}{National Center for Supercomputing  (NCSA)} \href{http://www.ncsa.illinois.edu/enabling/bluewaters}{Blue Waters}} 
+      \begin{itemize}
+      \item Improved petascale performance of Hybrid \href{http://en.wikipedia.org/wiki/Message_Passing_Interface}{MPI} / \href{http://en.wikipedia.org/wiki/OpenMP}{OpenMP} \href{https://en.wikipedia.org/wiki/Fast_Fourier_transform}{FFT} and Stencils using Spiral. Applications include \href{https://en.wikipedia.org/wiki/Pseudo-spectral_method}{Pseudo Spectral Methods} for modeling turbulence and the NEURON simulation environment. 
+      \end{itemize}
+
+    \item \textbf{SpiralGen DevOps and Cloud Infrastructure}: 
+    \begin{itemize}
+    \item "Full-stack" software development environment for Spiral code generation. Provided Continuous Integration and Software Control Management for targeting many backends (e.g. Intel family, GPU, etc). Utilized early version of browser-based Integrated Development Environment (IDE) and virtualization on \textbf{\href{https://en.wikipedia.org/wiki/Amazon_Web_Services}{Amazon Web Services}} (AWS).  
+    \item Provided integration with  \href{http://www.mathworks.com/products/matlab/}{Matlab}/\href{http://www.mathworks.com/products/simulink/}{Simulink}/\href{http://www.mathworks.com/help/matlab/ref/mex.html}{Mex}, \href{https://www.python.org/}{Python}/\href{http://cython.org/}{Cython}, \href{http://www.ros.org/}{ROS}, \href{https://www.cyberbotics.com/overview}{Webots}, \href{http://www.ls.cs.cmu.edu/KeYmaeraX/}{KeyMaeraX}, \href{http://www.wolfram.com/mathematica/}{Mathematica}.
+    \end{itemize}
+
+
+    \item \textbf{\href{http://www.darpa.mil/Our_Work/MTO/Programs/Power_Efficiency_Revolution_for_Embedded_Computing_Technologies_(PERFECT).aspx}{Power Efficiency Revolution for Embedded Computing Technologies (PERFECT, \href{http://www.darpa.mil/default.aspx}{DARPA})}}Eclipse RCP \textbf{first commerical release} of \href{http://www.spiralgen.com/new-products/spiral-fft-gpl-10}{SpiralFFT}.  
+
+    \item \textbf{\href{http://www.darpa.mil/program/building-resource-adaptive-software-systems}{Building Resource Adaptive Sotware Systems} (BRASS, \href{http://www.darpa.mil/default.aspx}{DARPA})}:Test harness for Spiral-generated resource adaptive FFT for Synthetic Apeture Radar. 
+
+  \end{itemize}
+
+\item \textbf{FUNDING AND RESOURCE PROPOSALS}
+        \begin{itemize}
+          \item \textbf{DOD 172-008 SBIR} (co-wrote Phase 1).
+          \item \textbf{\href{http://science.energy.gov/sbir/}{DOE SG-13808 SBIR}} (co-wrote, \href{https://www.osti.gov/scitech/servlets/purl/1242462}{Phase 1} awarded, Phase 2 submitted, denied).
+          \item \textbf{DOD A15-102 SBIR} (PI, Phase 1 submitted).
+          \item \textbf{\href{https://bluewaters.ncsa.illinois.edu/paid-ime-submissions}{NSF NCSA Blue Waters PAID IME Submission}} (Co-PI).
+          \item \textbf{Optimization of 3-D FFTs for Intel Xeon Phi and NVIDIA Kepler K20 GPUs using Spiral} (PI, awarded).
+        \end{itemize}
+
+
+    \end{itemize}
+
+%\end{achievements}
+
+
+\employer{\href{https://www.cmu.edu/me/}{Carnegie Mellon University}}{2010-2012}{TA-Heat Transfer: lectured on conduction, convection, radiation.}
+%	\begin{achievements}
+%  \begin{itemize}
+%    \item 
+%  \end{itemize}
+%	\end{achievements}
+
+\employer{\href{http://www.engineering.pitt.edu/MEMS/}{University of Pittsburgh}}{2008}{TA-Fluid Mechanics: viscous, boundary, scale similarity, dimensional analysis.}
+%  \begin{achievements}
+%  \begin{itemize}
+%    \item 
+%  \end{itemize}
+%  \end{achievements}
+
+\employer{\href{http://www.physicsandastronomy.pitt.edu/}{University of Pittsburgh}}{2007-2009}{Lecturer-Physics: mathematics, turbulence, statistics and nonlinearity.}
+%  \begin{achievements}
+%  \begin{itemize}
+%    \item Lectured on mathematics, bio-physics, turbulence, statistical and nonlinear phenomena. 
+%  \end{itemize}
+%  \end{achievements}
+
+\employer{\href{http://www.precisiontherapeutics.com/}{Precision Therapeutics}}{2006-2007}{Intern-Technology Development: optical microscope automation design.} 
+%  \begin{achievements}
+%  \begin{itemize}
+%    \item  
+%  \end{itemize}
+%  \end{achievements}
+
+\header{\large{Education}}
+
+\begin{itemize}[leftmargin=*]
+  \item Carnegie Mellon University Pittsburgh, PA PhD Mechanical Engineering, 2013 GPA: 3.9/4.0}
+%\schoolwithcourses{Carnegie Mellon University}{Pittsburgh, PA}{PhD Mechanical Engineering, 2013 GPA: 3.85/4.00}
+%\area{
+  \begin{itemize}
+    \item Thesis: \href{http://jasonlarkin.github.io/projects-phd.html}
+    {Vibrational Mode Properties of Disordered Solids from High-Performance Atomistic Simulations.}}
+%Numerically investigated thermal properties of crystal alloys, glasses, and organic materials using classical and \href{http://en.wikipedia.org/wiki/Ab_initio_quantum_chemistry_methods}{\emph{ab initio}}-based atomistic techniques.
+% Information Content: 1-10 GB
+    \item  {\href{http://ntpl.me.cmu.edu/research.html}{Nanostructure Thermal Conductivity:} investigator for  
+\href{http://www.wpafb.af.mil/afrl/afosr/}{AFOSR} on the \href{http://www.hpcmo.hpc.mil/cms2/index.php}{DOD's HPCMP}.}
+    \item \href{https://nanochemistry.curtin.edu.au/local/docs/gulp/gulp4.2_manual.pdf}{GULP:} international collaboration with \href{http://nanochemistry.curtin.edu.au/people/staff.cfm/J.Gale}{Julian Gale} at the 
+\href{http://nanochemistry.curtin.edu.au/}{Nanochemistry Research Institute} at \href{http://www.curtin.edu.au/}{Curtin University}.
+  \end{itemize}
+
+  \item \textbf{University of Pittsburgh} Pittsburgh, PA MS Mechanical Engineering, 2009 GPA: 3.7/4.0
+  \begin{itemize}
+    \item \textbf{Thesis}: \href{http://jasonlarkin.github.io/projects-ms.html}{Statistics of Particle Concentrations in Free-Surface Turbulence.} 
+    \item \textbf{\href{http://jasonlarkin.github.io/projects-ms.html}{Statistics of Free-Surface Turbulence}:} \textbf{international} collaboration with \href{http://perso.ens-lyon.fr/alain.pumir/Pumir_webpage.html}{Alain Pumir} and \href{https://groups.oist.jp/ciu/mahesh-m-bandi}{Mahesh M. Bandi}. 
+%Performed experiments using novel 2D and 3D flow configurations to study turbulence as a nonlinear dynamical system. 
+  \end{itemize}
+
+  \item \textbf{University of Pittsburgh} Pittsburgh, PA BS Mechanical Engineering, 2007 GPA: 3.2/4.0
+  \begin{itemize}
+    \item \textbf{Research}: \href{http://en.wikipedia.org/wiki/Finite_element_method}{FEM} design of model arterial bifurcation.
+  \end{itemize}
+
+  \item \textbf{Steel Center AVTS} Jefferson Hills, PA \href{http://en.wikipedia.org/wiki/Computer-aided_design}{CADD} Certification, 2002 GPA: 3.80/4.00
+
+\end{itemize}
+
+\header{\Large{Skills/Tools}}
+
+%\begin{achievements}
+
+\begin{itemize}[leftmargin=*]
+
+  \item \textbf{Publication and Public Speaking}: \href{https://scholar.google.com/citations?hl=en&user=ry2klw0AAAAJ}{google scholar} (journal pubs (18), book chapters (2), conference presentations (28).
+
+  \item \textbf{"Full-Stack" Software Engineering (stacks)}: 
+  \begin{itemize}
+    \item Qiskit: Aqua, Terra, Ignis, Pulse, Metal
+    \item Microsoft Q#
+    \item More limited experience with IntelQS, Cirq, Quimb, tkey, pyZX, STIM, XQSim
+    \item Python/C++/C (PyTorch/Tensforflow/NLTK/scipy/numpy)
+    \item Matlab-Simulink/C++/C/Fortran    
+    \item \textbf{Software Configuration Management}: svn, git, GitHub, Jenkins, JIRA.  \textbf{Compilers/Compilation}: GNU, Intel, Visual Studio, Cython, Mex, make, cmake, MSBuild, Maven. 
+    \item \textbf{Cloud Computing}: Amazon Web Service (AWS),  Azure, Docker, VirtualBox/VMWare, Ubuntu, Red Hat, CentOS, CoreOS, Windows (XP, 7, 8, Server). MPI / OpenMP, Vector Intrinsics (SSE/AVX/etc), CoArray Fortran
+  \end{itemize}
+
+  \item \textbf{Hardware:} optics/lasers, DI/DO AI/AO interfaces, automation, machining, circuitry,  robotics control.
+ 
+\end{itemize}
+
+
+\end{itemize}
+%\end{achievements}
+
+\header{\Large{\href{http://jasonlarkin.github.io/pub.html}{Publications} (selected, 27 total)}}
+%\begin{achievements}
+\begin{itemize}[leftmargin=*]
+\item Evaluation of Quantum Approximation Optimization Algorithm, 
+J Larkin, et al, Quantum Science and Technology (2022)
+\item "Quantum Circuit Generation with SPIRAL", S. Mionis, F. Franchetti, J. Larkin, IEEE High Performance Extreme Computing Conference Septemeber 2021.
+\item "Quantum Circuit Optimization with SPIRAL: A First Look", S. Mionis, F. Franchetti, J. Larkin, Supercomputing 2020.
+\item "Assessment of Alternative Objective Functions for Quantum Variational Combinatorial Optimization ", M. Jonsson, J. Larkin, G. Guerreschi, IEEE QCE Quantum Week 2020.
+\item Achieving the Quantum Advantage in Software, \href{https://insights.sei.cmu.edu/sei_blog/2019/12/achieving-the-quantum-advantage-in-software.html}{SEI Blog, (2019)}
+\item "Projecting Quantum Advantage versus Classical State-of-the-Art", J. Larkin, D. Justice, IEEE HPEC 2019.
+
+\item \href{http://www.cs.cmu.edu/~mmv/papers/17HACMS-Spiral.pdf}{High-Assurance SPIRAL: End-to-End Guarantees for Robot and Car Control, IEEE Control Systems, 2017}. 
+
+\item Thermal Conductivity Accumulation in a-Si from Dynamic Simulation,
+A. Benehban, JM Larkin, (in progress)
+\item Reduced thermal conductivity of Si/Ge random layer nanowires,
+N Samaraweera, JM Larkin, Journal of App. Physics (2018)
+\item Thermal conductivity accumulation in amorphous silica and silicon, 
+JM Larkin, et al, Physical Review B 89 (14), 144303 (2014)
+\item Origins of thermal conductivity changes in strained crystals, 
+KD Parrish, A Jain, JM Larkin, WA Saidi, AJH McGaughey Physical Review B 90 (23), 235201
+\item Predicting alloy vibrational mode properties using lattice dynamics calculations, molecular dynamics simulations, and the virtual crystal approximation, JM Larkin, AJH McGaughey Journal of Applied Physics 114 (2), 023507
+\item Disruption of superlattice phonons by interfacial mixing, SC Huberman, JM Larkin, AJH McGaughey, CH Amon Physical Review B 88 (15), 155311
+%\item Decorrelating a Compressible Turbulent Flow: an Experiment, \href{http://pre.aps.org/abstract/PRE/v82/i1/e016301}{Physical Review E 82, 016301 (2010).}
+\item Power-law distributions of particle concentration in free-surface flows, 
+J Larkin, et al, Physical Review E 80 (6), 066301 (2009)
+\end{itemize}
+%\end{achievements}
+
+\header{\Large{\href{http://jasonlarkin.org/pres.html}{Presentations} (selected, 28 total)}}
+%\begin{achievements}
+\begin{itemize}[leftmargin=*]
+\item Effect of noise models on QAOA performance for Max-Cut, R. Majumdar, J. Larkin, G. Guerreschi, S. Susmita, APS March Meeting 2021.
+\item Evaluation of QAOA, J. Larkin(speaker), \href{https://www.youtube.com/watch?v=I7yp-qXk0Zo}{Association Quantum}, \href{https://www.meetup.com/Washington-Quantum-Computing-Meetup/events/272829277/}{DC Quantum Meetup 2020}.
+\item Quantum Circuit Optimization with SPIRAL, S. Mionis, J. Larkin, et al, Supercomputing 2020 (best presentation noimnee).
+\item Assesing Objective Functions for Quantum Variational Optimization, M. Jonsson, J. Larkin et al, IEEE Quantum Week 2020.
+\item Projecting NISQ-era quantum advantage with QAOA
+GG Guerreschi, J Larkin, et al American Physical Society 65 2020.
+\item \href{https://bluewaters.ncsa.illinois.edu/documents/10157/5a0a0d37-95bf-460b-a7f0-cfadd15abec8}{SpiralFFT for Blue Waters}, \textbf{J.M. Larkin} \href{https://www.youtube.com/watch?v=rjbEWeu2Nwc&feature=youtu.be#t=51m53s}{\textbf{(speaker)}}, \href{https://bluewaters.ncsa.illinois.edu/paid-ime#SPIRAL FFT}{NCSA Symposium for Petascale 2015}.
+\item “Predicting Vibrational Mean Free Paths in Disordered Systems”, J.M. Larkin, A.J.H. McGuaghey,  presented at 2013 ASME Summer Heat Transfer Conference Minneapolis, MN.
+\item “Effect of Interspecies Mixing on Phonon Mean Free Paths in Superlattices”, S.C. Huberman, J.M. Larkin, A.J.H. McGaughey, C.H. Amon, presented at 2013 ASME Summer Heat Transfer Conference Minneapolis, MN.
+\item “Origin of Thermal Conductivity Changes in Strained Systems”, K. Parrish, J.M. Larkin, A.J.H. McGaughey, presented at 2013 ASME Summer Heat Transfer Conference Minneapolis, MN.
+\item Virtual Crystal Approximation, \textbf{J.M. Larkin (speaker)}, \href{http://www.mrs.org/spring2013/}{2013 MRS Spring Meeting} San Francisco, CA.
+\item “Ordered and Disordered Contributions to Lattice Thermal Conductivity”, J.M. Larkin (speaker), A.J.H. McGaughey, presented at 2012 PHONONS Conference Ann Arbor, MI.
+\item “Predicting Phonon Properties of Silicon from First-Principles Calculations”, J.M. Larkin, A.J.H. McGaughey (speaker), W.A. Al-Saidi, presented at 2012 ASME Summer Heat Transfer Conference Puerto Rico, USA.
+\item Generalized Fractal Dimensions...Turbulence, \textbf{J.M. Larkin (speaker)}, \href{http://meetings.aps.org/Meeting/MAR08/Content/1017}{2008 American Physical Society March Meeting}.
+\item Flow Chamber to Explore the Development of Cerebral Aneurysms, J. Larkin, et al, 2007 Biomedical Engineering Society. 
+%PHONONS 2012 http://www-personal.umich.edu/~pipe/Phonons_2012_Abstract_Book.pdf
+\end{itemize}
+%\end{achievements}
+
+
+%\header{\Large{Honors}}
+%%\begin{achievements}
+%\begin{itemize}[leftmargin=*]
+%\item \href{http://www.asmeconferences.org/HT2012/}{2012 ASME MHNMT International Summer Heat Transfer Conference} \textbf{Top 5 Technical Paper}
+%\item \href{http://www.cmu.edu/me/news/archive/2011/bennett-conference.html}{2011 Bennett Conference \textbf{Best Presentation}}
+%\item \href{http://www.ices.cmu.edu/newsitem.asp?NewsID=749}{2011 ICES \textbf{Northrop-Gruman Fellow}}
+%\item 2007-2009 \textbf{NSF Graduate Student Research Grant} University of Pittsburgh Department of Physics.
+%\end{itemize}
+%\end{achievements}
+
+%\header{Memberships}
+%%\begin{achievements}
+%\begin{itemize}[leftmargin=*]
+%\item American Physical Society $\cdot$ American Society of Mechanical Engineers 
+%$\cdot$ Materials Research Society $\cdot$ Society of Industrial and Applied Mathematics $\cdot$ DOD High Performance Computing Modernization Program $\cdot$ NCSA Blue Waters PAID IME
+%\end{itemize}
+%%\end{achievements}
+
+\end{document}
